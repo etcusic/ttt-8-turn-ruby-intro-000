@@ -21,6 +21,11 @@ def valid_move?(board, index)
   end
 end
 
-def move(board, index, token)
+def move(board, index, token="X")
+  def update_array(array, index, value)
+    array[index] = value
+    return array
+  end
 
+  update_array(board, index, token)
 end

@@ -29,6 +29,12 @@ def move(board, index, token="X")
   update_array(board, index, token)
 end
 
-def turn(board)
+def turn(board, input)
   puts "Please enter 1-9:"
+  index = input_to_index(input)
+  if !valid_move?(board, index)
+    puts "Input again"
+  else
+    move(board, index)
+    display_board(board)
 end

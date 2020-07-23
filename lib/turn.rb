@@ -26,6 +26,9 @@ def move(board, index, token="X")
     array[index] = value
     return array
   end
-
   update_array(board, index, token)
+end
+
+def turn
+  puts "Please enter 1-9"
 end

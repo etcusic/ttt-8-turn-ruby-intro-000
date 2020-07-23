@@ -12,8 +12,8 @@ def input_to_index(input)
 end
 
 def valid_move?(board, index)
-  if board[index] == " " || board[index] == "" || board[index] == nil
-    return true
+  if board[index] != " " || board[index] != "" || board[index] != nil
+    return false
   elsif index >= 0 && index <= 8
     return true
   else
